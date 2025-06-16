@@ -77,7 +77,7 @@
         .fade-word {
             display: inline-block;
             opacity: 1;
-            transition: opacity 2s ease; /* Slower fade */
+            transition: opacity 1.5s ease; /* Slower fade */
         }
 
         .roi-calculation {
@@ -499,9 +499,9 @@
 
             fadeWords.forEach((word, index) => {
                 setTimeout(() => {
-                    word.style.opacity = '0.7'; /*Don't fade completely */
+                    word.style.opacity = '0.3'; /*Don't fade completely */
                 }, delay);
-                delay += 500;  /* Slower timing between words */
+                delay += 450;  /* Slower timing between words */
             });
         }
 

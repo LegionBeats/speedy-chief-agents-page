@@ -499,9 +499,9 @@
 
             fadeWords.forEach((word, index) => {
                 setTimeout(() => {
-                    word.style.opacity = '0.3'; /*Don't fade completely */
+                    word.style.opacity = '0.7'; /*Don't fade completely */
                 }, delay);
-                delay += 600;  /* Slower timing between words */
+                delay += 500;  /* Slower timing between words */
             });
         }
 
@@ -509,7 +509,7 @@
         const fadeTextObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    setTimeout(startFadeEffect, 2000); // Start after 2 seconds
+                    setTimeout(startFadeEffect, 1500); // Start after 1.5 seconds
                     fadeTextObserver.unobserve(entry.target);
                 }
             });
